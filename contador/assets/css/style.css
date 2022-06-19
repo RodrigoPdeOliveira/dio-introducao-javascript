@@ -1,0 +1,37 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    user-select: none;
+}
+
+h1 {
+    font-size: 15vmin;
+    font-weight: 800;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#contador {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40vw;
+    height: 25vh;
+}
+
+#contador * {
+    justify-content: center;
+    box-sizing: border-box;
+    width: 10vw;
+    height: 20vh;
+    padding: 0;
+    font-size: 4vmin;
+    background-color: rgba(230, 230, 230, 0.3);
+    border: 1px solid lightgray;
+}

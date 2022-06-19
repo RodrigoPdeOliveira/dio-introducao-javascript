@@ -1,0 +1,68 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    user-select: none;
+}
+
+h1 {
+    font-size: 15vmin;
+    font-weight: 800;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input {
+    margin-bottom: 45px;
+}
+
+#input * {
+    margin: 3px;
+    width: 40vw;
+    height: 30px;
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+
+#save-btn {
+    font-size: medium;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(35, 149, 255);
+    border: none;
+}
+
+#tasks {
+    min-height: 30vh;
+    width: 35vw;
+    padding: 0;
+    align-items: flex-start;
+    list-style: none;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+}
+
+#tasks * {
+    padding: 8px;
+}
+
+#tasks input {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+#tasks input:checked + span {
+    text-decoration: line-through;
+    color: grey;
+}
+
+#tasks li {
+    flex-direction: row;
+    word-break: break-word;
+}
